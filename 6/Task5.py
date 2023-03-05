@@ -11,4 +11,4 @@ emails = {'mgu.edu': ['andrei_serov', 'alexander_pushkin', 'elena_belova', 'kiri
 
 for key, value in emails.items():
     for i in value:
-        print(f"{key}@{i}")
+        print(f"{i}@{key}")
