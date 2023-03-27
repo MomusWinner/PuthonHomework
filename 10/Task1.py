@@ -20,5 +20,4 @@ def start_game():
         all_time -= (end_time - start_time)
         print(f"Осталось {round(all_time / 60, 2)}минут")
 
-
 start_game()
