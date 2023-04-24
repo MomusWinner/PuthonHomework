@@ -7,11 +7,10 @@ bestWord = ""
 
 with open(file,"r") as fr:
     for i in fr:
-        for j in i.lower().split():
-            words[j] = i.split().count(j)
+        [ for j in i.lower().split() ]
+
 
 for key in words:
-
     if int(words[key]) >= maxValue:
         maxValue = words[key]
         bestWord = key
