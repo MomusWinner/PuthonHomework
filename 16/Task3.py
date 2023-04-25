@@ -8,7 +8,10 @@ login = input()
 
 try:
     for i in login:
-        int(i)
+        if not i.islower():
+            raise ValueError( "Только строчные")
     print("Логин добавлен в базу")
-except:
+except ValueError as e:
+    print(e)
+finally:
     print("Я выучил исключения")
